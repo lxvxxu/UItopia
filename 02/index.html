@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖Frontend Study 2주차💕</title>
+</head>
+<body>
+    <a href="https://www.notion.so/UItopia-1b9ec6997d728068bfc8e179d3dccfce" target="_blank">
+        <img src="images/myex01.jpg" alt="썸네일" witdh="300">
+    </a>
+    <h1>웹 문서 만들기</h1>
+    <hr>
+    <p>저희 <b>UItopia</b> 프론트엔드 웹 개발 스터디에서는 다함께 <i><a href="https://easyspub.co.kr/20_Menu/BookView/696/PUB" target="_blank">HTML+CSS+javscript</a></i>를 공부하기로 했습니다.</p>
+    <p>본 페이지는 해당 교재 및 강의를 공부하면서 모든 태그를 한 번씩 사용해보는 것이 목표이므로 난잡할 수 있으니 양해 바랍니다.</p>
+    <a href="https://www.notion.so/UItopia-1b9ec6997d728068bfc8e179d3dccfce" target="_blank">👉 스터디 페이지 바로가기</a>
+    <hr>
+    <h4>스터디 목차</h4>
+    <ol>
+        <li>팀 결성 및 스터디 계획서 작성</li>
+        <li><b>Ch01</b> 웹은 어떻게 움직일까 ~ <b>Ch05</b> 입력 양식 작성하기</li>
+        <li><b>Ch05</b> CSS의 기본 ~ <b>Ch08</b> CSS 박스 모델</li>
+        <li><b>Ch09</b> 이미지와 그러데이션 효과로 배경 꾸미기 ~ <b>Ch11</b> 플렉스 박스 레이아웃으로 배치하기</li>
+        <li><b>Ch12</b> CSS 그리드 레이아웃으로 배치하기 ~ <b>Ch14</b> 트랜지션과 애니메이션</li>
+        <li><b>Ch15</b> 자바스크립트와 첫 만남 ~ <b>Ch17</b> 함수와 이벤트</li>
+        <li><b>Ch18</b> 자바스크립트와 객체 ~ <b>Ch19</b> 문서 객체 모델(DOM) 다루기</li>
+        <li><b>[Do it! 실전 프로젝트]</b> 넷플릭스 사이트 따라 만들기</li>
+    </ol>
+    <h4>스터디 팀원</h4>
+    <ul>
+        <li>김사람</li>
+        <li>이사람</li>
+        <li>박사람</li>
+        <li>서사람</li>
+    </ul>
+    <audio src="medias/spring.mp3" controls></audio>
+    <hr>
+    <video src="medias/salad.mp4" controls loop poster="images/poster.jpg" muted></video>
+    <hr>
+    <p>스터디에 함께 하고 싶다면?</p>
+    <form action="">
+        <fieldset>
+            <legend><b>개인 정보</b></legend>
+            <label for="user-name">이름 <input type="text" autofocus placeholder="홍길동"></label>
+            <label for="user-number">학번 </label>
+            <input type="text" id="user-number" placeholder="202510133">
+            <label for="user-old">나이 (만)<input type="number" min="19" max="80" placeholder="19">세</label><br>
+            <label for="user-gender">성별</label>
+            <select id="user-gender">
+                <option value="female" selected>여성</option>
+                <option value="male">남성</option>
+                <option value="else">기타</option>
+            </select><br>
+            <label for="user-major">전공</label>
+                <ul>
+                    <li><input type="radio" name="user-major" value="computer">컴퓨터과학전공</li>
+                    <li><input type="radio" name="user-major" value="computer">전기공학전공</li>
+                    <li><input type="radio" name="user-major" value="computer">휴먼지능정보공학전공</li>
+                    <li><input type="radio" name="user-major" value="computer">지능IOT융합전공</li>
+                </ul>
+            <label for="user-tel">연락처 <input type="tel" placeholder="하이픈(-)은 빼고 입력해주세요. (01012345678)"></label>
+            <br><hr>
+            <label for="">아이디(6자 이상) <input type="text"></label>
+            <label for="password">비밀번호 <input type="password"></label>
+            <button>로그인</button>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>관심 분야</b></legend>
+            <ul>
+                <li>
+                    <label><input type="checkbox" name="interested">Web 개발 (HTML+CSS+JavaScript)</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="interested">Android 개발</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="interested">iOS 개발</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="interested">프레임워크(React, Vue.js 등)</label>
+                </li>
+            </ul>
+            <hr>
+            <label><b>사전 지식</b></label>
+            <p>거의 없음<input type="range" min="0" max="10" step="1" value="5">능숙함</p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b><label for="motive">지원 동기</label></b></legend>
+            <textarea id="motive" cols="160" rows="4"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>면접 희망일</b></legend>
+            <input type="datetime-local">
+        </fieldset>
+        <button type="submit">제출</button>
+        <button type="reset">다시 작성하기</button>
+    </form>
+
+</body>
+</html>
